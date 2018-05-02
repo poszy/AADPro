@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,13 +27,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Logging variables.
+
+        Log.d(LOG_TAG,"-----------");
+        Log.d(LOG_TAG, "On Create");
+
         mMessageEditText = (EditText) findViewById(R.id.editText_main);
 
         // REPLY view instances variables
         mReplyHeadTextView = (TextView) findViewById(R.id.text_header_reply);
         mReplyTexView = (TextView) findViewById(R.id.text_message_reply);
 
+        // test to make sure the bundle is not null
+
+        if (savedInstanceState != null) {
+
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if (isVisible){
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTexView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTexView.setVisibility(View.VISIBLE);
+
+            }
+        }
+
+
+
     }
+
+
 
     public void launchSecondActivity(View view) {
 
@@ -70,8 +91,46 @@ public class MainActivity extends AppCompatActivity {
             } // end inner if
 
         } // end if
+    } // end OnActivityResult
 
+    // override methods for loggin purposes.
 
+    @Override
+    public void onStart(){
+        super.onStart();
+        Log.d(LOG_TAG,"onStart");
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "onPause");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG, "onStop");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+
+        // check to see if the heading is visible
+        // if it is, save it, otherwise we
+        // are still using the default layout (orientation of screen)
+        if(mReplyHeadTextView.getVisibility() == View.VISIBLE){
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", mReplyTexView.getText().toString());
+        }
     }
 
 }
