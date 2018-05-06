@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
     // startChooser() show the system app chooser and send the intent
 
         ShareCompat.IntentBuilder
+                // return this because,
+                // This way, after each call to one of the methods,
+                // you'll get the same object returned so that you can call another method on.
                 .from(this)
                 .setType(mimeType)
                 .setChooserTitle("Share this text with:")
