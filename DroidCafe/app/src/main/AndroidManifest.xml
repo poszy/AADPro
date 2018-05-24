@@ -19,7 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OrderActivity"></activity>
+
+        <!--Support for back up button-->
+        <activity android:name=".OrderActivity"
+            android:label="Order Activity"
+            android:parentActivityName="com.luispena.droidcafe.MainActivity">
+
+            <meta-data
+
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+
+                />
+
+        </activity>
     </application>
 
 </manifest>
