@@ -20,7 +20,11 @@
             </intent-filter>
         </activity>
 
-        <!--Support for back up button-->
+        <!--Support for back up button
+        up button sends user back to parent screen, and
+        the back button sends the user to the previous child screen
+
+        -->
         <activity android:name=".OrderActivity"
             android:label="Order Activity"
             android:parentActivityName="com.luispena.droidcafe.MainActivity">
