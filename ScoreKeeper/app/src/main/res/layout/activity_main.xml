@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.luispena.scorekeeper.MainActivity">
+
+    <!--
+
+    layout_weight determines how much height each Relative layout
+    will use.
+
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team_one"
+            android:text="@string/team_1"
+
+            style="@style/TeamStyle" />
+        <ImageButton
+            android:id="@+id/decrease_one"
+            style="@style/MinusButtons"
+            />
+
+        <TextView
+            android:id="@+id/score_one"
+            android:text="@string/_0"
+            style="@style/ScoreStyle" />
+
+        <ImageButton
+            android:id="@+id/increase_one"
+            style="@style/PlusButtons"
+            android:width="70dp"
+            android:height="70dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team_two"
+            android:text="@string/team_2"
+
+            style="@style/TeamStyle" />
+        <ImageButton
+            style="@style/MinusButtons"
+            android:id="@+id/decrease_two"
+
+
+            />
+
+        <TextView
+            android:id="@+id/score_two"
+            android:text="@string/_0"
+            style="@style/ScoreStyle" />
+
+        <ImageButton
+            android:id="@+id/increase_two"
+            style="@style/PlusButtons"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
