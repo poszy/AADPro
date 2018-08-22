@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.SwitchPreferenceCompat xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- In order to use the PreferenceFragmentCompat version of PreferenceFragment,
+     you must also use the android.support.v7 version of SwitchPreference (SwitchPreferenceCompat).-->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="Turn this on or off"
+        android:title="Settings Option" />
+</android.support.v7.preference.SwitchPreferenceCompat>
