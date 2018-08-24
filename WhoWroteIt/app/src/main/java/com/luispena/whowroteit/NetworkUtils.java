@@ -40,7 +40,7 @@ public class NetworkUtils {
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
 
-            // REad the repsonse using an InputStream and StringBuffer, then convert it to a string
+            // Read the repsonse using an InputStream and StringBuffer, then convert it to a string
             InputStream inputStream = urlConnection.getInputStream();
             StringBuffer buffer = new StringBuffer();
 
