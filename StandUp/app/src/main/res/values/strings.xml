@@ -3,4 +3,7 @@
     <string name="stand_up_alarm">Stand up Alarm</string>
     <string name="alarm_on_toast">Alarm is on!</string>
     <string name="alarm_off_toast">Alarm is off!</string>
+    <string name="notification_title"> Stand up alert! </string>
+    <string name="notification_text"> You Should stand up and walk around now! </string>
+
 </resources>
