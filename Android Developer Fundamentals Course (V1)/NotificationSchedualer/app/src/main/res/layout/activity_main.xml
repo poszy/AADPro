@@ -50,20 +50,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/schedule_job"
-        android:onClick="scheduleJob"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="4dp"
-        />
+        android:layout_toEndOf="@+id/netWorkOptions"
+        android:onClick="scheduleJob"
+        android:text="@string/schedule_job" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancel_job"
-        android:onClick="cancelJob"
+        android:layout_centerVertical="true"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="4dp"
-        />
+        android:layout_marginStart="-4dp"
+        android:onClick="cancelJob"
+        android:text="@string/cancel_job" />
 
 
 </RelativeLayout>
