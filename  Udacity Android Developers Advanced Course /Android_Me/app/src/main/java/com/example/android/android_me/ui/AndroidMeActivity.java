@@ -38,16 +38,24 @@ public class AndroidMeActivity extends AppCompatActivity {
             BodyPartFragment bodyFragment = new BodyPartFragment();
             BodyPartFragment legsFragment = new BodyPartFragment();
 
+            Bundle b = getIntent().getExtras();
+            assert b != null;
+            int aa = b.getInt("headIndex");
+            int bb = b.getInt("bodyIndex");
+            int cc = b.getInt("legIndex");
+
             // Use a FragmentManager and transaction to add the fragment to the screen
             FragmentManager fragmentManager = getSupportFragmentManager();
 
             // set tge kust if unage ud;s for the head gragment and set the position to the second image in the list
             headFragment.setImageId(AndroidImageAssets.getHeads());
-            headFragment.setListIndex(1);
+            headFragment.setListIndex(aa);
 
             bodyFragment.setImageId(AndroidImageAssets.getBodies());
+            bodyFragment.setListIndex(bb);
 
             legsFragment.setImageId(AndroidImageAssets.getLegs());
+            legsFragment.setListIndex(cc);
 
             //Fragment transaction
             fragmentManager.beginTransaction()
