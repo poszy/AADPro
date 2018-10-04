@@ -81,9 +81,15 @@ public class PlantUtils {
      * @return Image Resource to the correct plant image
      */
     public static int getPlantImgRes(Context context, int type, PlantStatus status, PlantSize size) {
+
+
         Resources res = context.getResources();
+
         TypedArray plantTypes = res.obtainTypedArray(R.array.plant_types);
+
         String resName = plantTypes.getString(type);
+
+
         if (status == PlantStatus.DYING) resName += "_danger";
         else if (status == PlantStatus.DEAD) resName += "_dead";
         if (size == PlantSize.TINY) resName += "_1";
