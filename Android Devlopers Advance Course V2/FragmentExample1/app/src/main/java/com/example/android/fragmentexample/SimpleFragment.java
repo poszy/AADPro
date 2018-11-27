@@ -51,8 +51,7 @@ public class SimpleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment.
-        final View rootView = inflater.inflate(R.layout.fragment_simple,
-                container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_simple, container, false);
         final RadioGroup radioGroup = rootView.findViewById(R.id.radio_group);
 
         // Set the radioGroup onCheckedChanged listener.
@@ -61,9 +60,10 @@ public class SimpleFragment extends Fragment {
                     @Override
                     public void onCheckedChanged(RadioGroup group, int checkedId) {
                         View radioButton = radioGroup.findViewById(checkedId);
+
                         int index = radioGroup.indexOfChild(radioButton);
-                        TextView textView =
-                                rootView.findViewById(R.id.fragment_header);
+                        TextView textView = rootView.findViewById(R.id.fragment_header);
+
                         switch (index) {
                             case YES: // User chose "Yes".
                                 textView.setText(R.string.yes_message);
@@ -77,6 +77,28 @@ public class SimpleFragment extends Fragment {
                         }
                     }
                 });
+
+
+
+        /*
+        *
+        * I Can always add another fragment here, instead of creating a new file like I did with the rating fragmen
+        *
+           // Set the rating bar onCheckedChanged listener.
+            ratingBar.setOnRatingBarChangeListener
+                    (new RatingBar.OnRatingBarChangeListener() {
+                        @Override
+                        public void onRatingChanged(RatingBar ratingBar,
+                                                    float rating, boolean fromUser) {
+                            // Get rating and show Toast with rating.
+                            String myRating = (getString(R.string.my_rating) +
+                                    String.valueOf(ratingBar.getRating()));
+                            Toast.makeText(getContext(), myRating,
+                                    Toast.LENGTH_SHORT).show();
+                        }
+            });
+
+        * */
 
         // Return the View for the fragment's UI.
         return rootView;

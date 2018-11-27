@@ -83,4 +83,13 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_simple" />
 
+    <fragment
+        android:id="@+id/fragment_rating"
+        android:name="com.example.android.fragmentexample.RatingFragment"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
