@@ -1,0 +1,4 @@
+#Thu Nov 29 11:48:58 PST 2018
+base.0=/home/luispena/ProgrammingProjects/AADPro/Android Devlopers Advance Course V2/FragmentCommunicate/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
