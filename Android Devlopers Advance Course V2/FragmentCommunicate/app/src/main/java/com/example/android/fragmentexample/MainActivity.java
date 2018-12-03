@@ -28,7 +28,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SimpleFragment.OnFragmentInteractionListener {
 
-
     private Button mButton;
     private Boolean isFragmentDisplayed = false;
     static final String STATE_FRAGMENT = "state_of_fragment";
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements SimpleFragment.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mButton = findViewById(R.id.mButton);
 
         if (savedInstanceState != null) {
@@ -70,9 +68,6 @@ public class MainActivity extends AppCompatActivity implements SimpleFragment.On
                 }
             }
         });
-
-
-
     }
 
     @Override
@@ -139,6 +134,5 @@ public class MainActivity extends AppCompatActivity implements SimpleFragment.On
         mRadioButtonChoice = choice;
         Toast.makeText(this, "Choice is " + Integer.toString(choice),
                 Toast.LENGTH_SHORT).show();
-
     }
 }
