@@ -24,4 +24,9 @@
     <style name="AppWidgetText" parent="Base.TextAppearance.AppCompat.Subhead">
         <item name="android:textColor">&#64;android:color/black</item>
     </style>
+
+    <style name="AppWidgetButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
 </resources>
