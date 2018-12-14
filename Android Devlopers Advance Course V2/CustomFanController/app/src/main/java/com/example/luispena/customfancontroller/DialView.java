@@ -67,7 +67,7 @@ public class DialView extends View {
                 if (mActiveSelection == 1) {
                     mDialPaint.setColor(Color.GREEN);
                 }
-                
+
                 else if (mActiveSelection == 2){
                     mDialPaint.setColor(Color.CYAN);
                 }
