@@ -8,4 +8,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_binary_search">BinarySearch</string>
     <string name="computer_science_algorithm_fundamentals">Computer Science Algorithm Fundamentals</string>
+    <string name="layout_1">Layout 1</string>
+    <string name="layout_2">Layout 2</string>
+    <string name="layout_3">Layout 3</string>
 </resources>

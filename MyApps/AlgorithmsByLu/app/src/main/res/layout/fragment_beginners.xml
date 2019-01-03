@@ -6,9 +6,9 @@
     android:paddingRight="16dp" >
 
     <TextView
-        android:id="@+id/text_intermediate"
+        android:id="@+id/text_beginner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/layout_2"
+        android:text="@string/layout_1"
         android:gravity="center" />
 </RelativeLayout>
