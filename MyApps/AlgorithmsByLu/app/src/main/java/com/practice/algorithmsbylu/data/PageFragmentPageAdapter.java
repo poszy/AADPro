@@ -19,6 +19,12 @@ public class PageFragmentPageAdapter extends FragmentPagerAdapter {
     }
 
     @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        return tabTitles[position];
+    }
+
+    @Override
     public Fragment getItem(int position) {
         return FragmentBeginner.newInstance(position + 1);
     }
@@ -27,4 +33,6 @@ public class PageFragmentPageAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return PAGE_COUNT;
     }
+
+
 }
