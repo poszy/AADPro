@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -22,14 +23,9 @@ import java.util.List;
 public class FragmentBeginner extends Fragment {
 
     public static String ARG_PAGE = "ARG_PAGE";
-    private int mPage;
-    private TextView textView;
-
-
     private List<Algorithm> algorithmList = new ArrayList<>();
     private RecyclerView mRecyclerview;
     private RecyclerView.Adapter mAdapter;
-    //private RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
 
     public static FragmentBeginner newInstance(int page){
         Bundle args = new Bundle();
@@ -45,7 +41,6 @@ public class FragmentBeginner extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //mPage = getArguments().getInt(ARG_PAGE);
 
     }
 
@@ -64,8 +59,8 @@ public class FragmentBeginner extends Fragment {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(requireContext());
         mRecyclerview.setLayoutManager(mLayoutManager);
         mRecyclerview.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerview.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
         mRecyclerview.setAdapter(mAdapter);
-        // textView = (TextView) rootView.findViewById(R.id.text_beginner);
 
         prepareData();
 
