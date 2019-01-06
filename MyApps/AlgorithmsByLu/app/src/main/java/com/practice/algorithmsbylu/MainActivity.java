@@ -17,8 +17,7 @@ import android.view.MenuItem;
 
 import com.practice.algorithmsbylu.data.PageFragmentPageAdapter;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +46,7 @@ public class MainActivity extends AppCompatActivity
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new PageFragmentPageAdapter(getSupportFragmentManager(),
-                MainActivity.this));
+        viewPager.setAdapter(new PageFragmentPageAdapter(getSupportFragmentManager(), MainActivity.this));
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);

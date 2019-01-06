@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,8 @@ public class FragmentBeginner extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        String name =" FragmentBeginner.java";
+        Log.d("TAG", "onCreateView event : " + name);
 
         final ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_beginner, null, false);
 
@@ -66,10 +69,21 @@ public class FragmentBeginner extends Fragment {
 
         prepareData();
 
+
         return rootView;
     }
 
     private void prepareData() {
+
+        // This will clear the Algorithm list. This is away around onCreateView adding the same data to
+        // the recycler view. without this, every time BeginnerFragment is recreated after being destroyed from the stack
+        // it will increment the exact amount of items being added below.
+        // this will work for now as there is not a clear solution to implement everything in onCreate.
+        // onCreate only gets called once, once the fragment is recreated, oncreateview gets called again and the same data will
+        // keep being added as long as the BeginnerFragment keeps being recreated.
+
+        algorithmList.clear();
+
         Algorithm algorithm = new Algorithm(getString(R.string.title_binary_search), getString(R.string.desc_binary_search));
         algorithmList.add(algorithm);
 
