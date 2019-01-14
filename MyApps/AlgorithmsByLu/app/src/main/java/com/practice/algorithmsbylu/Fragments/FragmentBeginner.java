@@ -12,8 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.practice.algorithmsbylu.Adapters.BeginnerAdapater;
+import com.practice.algorithmsbylu.ExtendedClases.RecyclerTouchListener;
 import com.practice.algorithmsbylu.R;
 import com.practice.algorithmsbylu.data.Algorithm;
 
@@ -56,11 +58,14 @@ public class FragmentBeginner extends Fragment {
 
         mAdapter = new BeginnerAdapater(algorithmList);
 
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(requireContext());
+        final RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(requireContext());
         mRecyclerview.setLayoutManager(mLayoutManager);
         mRecyclerview.setItemAnimator(new DefaultItemAnimator());
         mRecyclerview.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
         mRecyclerview.setAdapter(mAdapter);
+
+
+
 
         prepareData();
 

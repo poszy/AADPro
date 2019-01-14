@@ -1,4 +1,4 @@
-package com.practice.algorithmsbylu.data;
+package com.practice.algorithmsbylu.Adapters;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

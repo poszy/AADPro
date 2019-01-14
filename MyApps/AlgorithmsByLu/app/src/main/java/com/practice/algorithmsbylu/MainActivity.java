@@ -15,7 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.practice.algorithmsbylu.data.PageFragmentPageAdapter;
+import com.practice.algorithmsbylu.Adapters.PageFragmentPageAdapter;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
