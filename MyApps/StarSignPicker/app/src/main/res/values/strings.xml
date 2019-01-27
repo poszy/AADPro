@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StartSignPicker</string>
+    <string name="pick_star_sign">Pick Star Sign</string>
+</resources>
