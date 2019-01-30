@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EarthquakeViewer</string>
+    <string name="dummy">Dummy Text</string>
+    <string name="earthquake_feed">http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.atom </string>
+</resources>

@@ -36,12 +36,6 @@ public class StarSignPickerTester extends AppCompatActivity {
 
     }
 
-    public void mclick(View view) {
-        Intent i = new Intent(Intent.ACTION_PICK, Uri.parse("starsigns://"));
-        startActivityForResult(i, PICK_STARSIGN);
-
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
