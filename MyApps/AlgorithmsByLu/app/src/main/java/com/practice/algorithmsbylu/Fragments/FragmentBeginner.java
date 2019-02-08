@@ -1,5 +1,6 @@
 package com.practice.algorithmsbylu.Fragments;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -22,12 +23,18 @@ import com.practice.algorithmsbylu.data.Algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.content.ContentValues.TAG;
+
 public class FragmentBeginner extends Fragment {
 
     public static String ARG_PAGE = "ARG_PAGE";
     private List<Algorithm> algorithmList = new ArrayList<>();
     private RecyclerView mRecyclerview;
-    private RecyclerView.Adapter mAdapter;
+    BeginnerAdapater mAdapter;
+
+    //private RecyclerView.Adapter mAdapter;
+
+    // Step 8.
 
     public static FragmentBeginner newInstance(int page){
         Bundle args = new Bundle();
@@ -42,6 +49,17 @@ public class FragmentBeginner extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mAdapter = new BeginnerAdapater(algorithmList);
+
+        mAdapter.setOnAdapterItemClick( new BeginnerAdapater.IAdpaterItemClick(){
+
+            // 10.
+            // this will
+            @Override
+            public void onItemclicked(int position) {
+
+            }
+        });
 
 
     }
@@ -53,22 +71,15 @@ public class FragmentBeginner extends Fragment {
         Log.d("TAG", "onCreateView event : " + name);
 
         final ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_beginner, null, false);
-
         mRecyclerview = (RecyclerView) rootView.findViewById(R.id.beginner_recycler_view);
 
-        mAdapter = new BeginnerAdapater(algorithmList);
 
         final RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(requireContext());
         mRecyclerview.setLayoutManager(mLayoutManager);
-        mRecyclerview.setItemAnimator(new DefaultItemAnimator());
-        mRecyclerview.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
+        //mRecyclerview.setItemAnimator(new DefaultItemAnimator());
+       // mRecyclerview.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
         mRecyclerview.setAdapter(mAdapter);
-
-
-
-
         prepareData();
-
 
         return rootView;
     }
