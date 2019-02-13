@@ -1,6 +1,7 @@
 package com.practice.algorithmsbylu.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.practice.algorithmsbylu.Algorithms.BinarySearch;
 import com.practice.algorithmsbylu.R;
 import com.practice.algorithmsbylu.data.Algorithm;
 
@@ -99,6 +101,8 @@ public class BeginnerAdapater extends RecyclerView.Adapter<BeginnerAdapater.MyVi
 
                     if (position == 0) {
                        // mAdapterItemclickListener.onItemclicked(position);
+                        Intent intent = new Intent(v.getContext(), BinarySearch.class);
+                        v.getContext().startActivity(intent);
                         Log.v(TAG, "index=" + position);
                     } else if (position == 1){
                         Log.v(TAG, "index=" + position);

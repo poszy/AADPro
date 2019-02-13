@@ -11,6 +11,7 @@ import android.util.Log;
 
 import com.example.luispena.earthquakeviewer.Earthquake;
 import com.example.luispena.earthquakeviewer.R;
+import com.example.luispena.earthquakeviewer.Room.EarthquakeDatabaseAccessor;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -41,7 +42,7 @@ public class EarthquakeViewModel extends AndroidViewModel {
     // Mutable variable that represents a list of earthquakes.
     // this view model will be cached and maintained across configuration changes.
 
-    private MutableLiveData<List<Earthquake>> earthQuakes;
+    private LiveData<List<Earthquake>> earthQuakes;
 
     public EarthquakeViewModel(Application application) {
         super(application);
@@ -49,7 +50,7 @@ public class EarthquakeViewModel extends AndroidViewModel {
 
     public LiveData<List<Earthquake>> getEarthquakes(){
         if(earthQuakes == null){
-            earthQuakes = new MutableLiveData<List<Earthquake>>();
+            EarthquakeDatabaseAccessor.getInstance(getApplication()).earthquakeDAO().loadAllEarthquakes();
             loadEarthQuakes();
         }
 
@@ -155,6 +156,11 @@ public class EarthquakeViewModel extends AndroidViewModel {
                     Log.e(TAG, "SAX Exception", e);
                 }
 
+                EarthquakeDatabaseAccessor
+                        .getInstance(getApplication())
+                        .earthquakeDAO()
+                        .insertEarthquakes(earthquakes);
+
                 // Return our result array.
                 return earthquakes;
             }
@@ -162,7 +168,7 @@ public class EarthquakeViewModel extends AndroidViewModel {
             @Override
             protected void onPostExecute(List<Earthquake> data) {
                 // Update the Live Data with the new list.
-                earthQuakes.setValue(data);
+               // earthQuakes.setValue(data);
             }
         }.execute();
     }

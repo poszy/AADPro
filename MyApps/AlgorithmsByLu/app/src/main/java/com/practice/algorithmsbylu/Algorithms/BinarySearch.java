@@ -19,13 +19,6 @@ public class BinarySearch extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
-        // Set Fragment Layout for displaying the code and its functionality
-        // display card layout
-
-
-
     }
 
 }
