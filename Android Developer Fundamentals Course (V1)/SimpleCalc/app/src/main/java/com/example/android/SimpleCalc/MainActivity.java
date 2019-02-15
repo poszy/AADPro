@@ -1,5 +1,5 @@
 /*
- * Copyright 2016, Google Inc.
+ * Copyright 2018, Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * SimpleCalc is the initial version of SimpleCalcTests.  It has
+ * SimpleCalc is the initial version of SimpleCalcTest.  It has
  * a number of intentional oversights for the student to debug/fix,
  * including input validation (no input, bad number format, div by zero)
  *
@@ -44,11 +44,6 @@ public class MainActivity extends Activity {
 
     private TextView mResultTextView;
 
-    /**
-     * Initializes the activity.
-     *
-     * @param savedInstanceState The current state data
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,27 +51,27 @@ public class MainActivity extends Activity {
 
         // Initialize the calculator class and all the views
         mCalculator = new Calculator();
-        mResultTextView = (TextView) findViewById(R.id.operation_result_text_view);
-        mOperandOneEditText = (EditText) findViewById(R.id.operand_one_edit_text);
-        mOperandTwoEditText = (EditText) findViewById(R.id.operand_two_edit_text);
+        mResultTextView = findViewById(R.id.operation_result_text_view);
+        mOperandOneEditText = findViewById(R.id.operand_one_edit_text);
+        mOperandTwoEditText = findViewById(R.id.operand_two_edit_text);
     }
 
     /**
-     * OnClick method that is called when the add {@link Button} is pressed.
+     * OnClick method called when the add Button is pressed.
      */
     public void onAdd(View view) {
         compute(Calculator.Operator.ADD);
     }
 
     /**
-     * OnClick method that is called when the substract {@link Button} is pressed.
+     * OnClick method called when the subtract Button is pressed.
      */
     public void onSub(View view) {
         compute(Calculator.Operator.SUB);
     }
 
     /**
-     * OnClick method that is called when the divide {@link Button} is pressed.
+     * OnClick method called when the divide Button is pressed.
      */
     public void onDiv(View view) {
         try {
@@ -88,12 +83,11 @@ public class MainActivity extends Activity {
     }
 
     /**
-     * OnClick method that is called when the multiply {@link Button} is pressed.
+     * OnClick method called when the multiply Button is pressed.
      */
     public void onMul(View view) {
         compute(Calculator.Operator.MUL);
     }
-
 
     private void compute(Calculator.Operator operator) {
         double operandOne;
@@ -110,16 +104,20 @@ public class MainActivity extends Activity {
         String result;
         switch (operator) {
             case ADD:
-                result = String.valueOf(mCalculator.add(operandOne, operandTwo));
+                result = String.valueOf(
+                        mCalculator.add(operandOne, operandTwo));
                 break;
             case SUB:
-                result = String.valueOf(mCalculator.sub(operandOne, operandTwo));
+                result = String.valueOf(
+                        mCalculator.sub(operandOne, operandTwo));
                 break;
             case DIV:
-                result = String.valueOf(mCalculator.div(operandOne, operandTwo));
+                result = String.valueOf(
+                        mCalculator.div(operandOne, operandTwo));
                 break;
             case MUL:
-                result = String.valueOf(mCalculator.mul(operandOne, operandTwo));
+                result = String.valueOf(
+                        mCalculator.mul(operandOne, operandTwo));
                 break;
             default:
                 result = getString(R.string.computationError);
@@ -129,7 +127,7 @@ public class MainActivity extends Activity {
     }
 
     /**
-     * @return the operand value which was entered in an {@link EditText} as a double
+     * @return the operand value entered in an EditText as double.
      */
     private static Double getOperand(EditText operandEditText) {
         String operandText = getOperandText(operandEditText);
@@ -137,7 +135,7 @@ public class MainActivity extends Activity {
     }
 
     /**
-     * @return the operand text which was entered in an {@link EditText}.
+     * @return the operand text which was entered in an EditText.
      */
     private static String getOperandText(EditText operandEditText) {
         return operandEditText.getText().toString();

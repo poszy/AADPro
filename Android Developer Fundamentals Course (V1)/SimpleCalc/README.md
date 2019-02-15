@@ -1,15 +1,15 @@
-SimpleCalc Sample App (Starter Code) 
-============
+SimpleCalc - Starter Code
+=========================
 
-SimpleCalc is a simple calculator app, with a handful of problems.  This
-app is used to explore the Android Studio debugger.  It's also the basis
-for learning about unit testing in SimpleCalcTests. 
+SimpleCalc is a simple calculator app, with a handful of problems. This
+app is used to explore the Android Studio debugger. It's also the basis
+for learning about unit testing in SimpleCalcTest.
 
 Pre-requisites
 --------------
 
 For this app you should be familiar with: 
-* Creating an Android Studio project, and working with EditText and Button views. 
+* Creating an Android Studio project, and working with EditText and Button views.
 * Building and running your app in Android Studio, in both an emulator and on a device.
 * Adding log statements and viewing the system log (logcat) in Android Monitor.
 
@@ -21,7 +21,7 @@ Getting Started
 License
 -------
 
-Copyright 2016 Google, Inc.
+Copyright 2018 Google, Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
