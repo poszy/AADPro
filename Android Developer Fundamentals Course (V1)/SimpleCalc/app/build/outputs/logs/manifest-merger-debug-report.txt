@@ -1,96 +1,96 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19b75d5f2c416ea2bdcf05c14f0b4aa9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4a7b22bab049caabf01ed1c4bec22537/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/458b636ad00f0ee8e490297fa2960594/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/618471bf61a32d5ac9b9faf8b637605e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/5b3c11ae482753e847e69a9646eaf8b7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6c22c6e4e3e87a7f2ce90015cf178230/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5a888ef6870db2e25686bcafe8c6e271/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/dabc0e1111fe99108215d7d7be57e2cb/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/68543ed7a8b65f098c76d28d3b281d90/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b965d89ca2426ed352aaeadecb058891/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/896901a91388b87aecab593efe63261f/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/24f2959ed997cd522c25e2a99d860413/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ed568ce45900c5e495f886f27bafcfae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1c66eb50d7199ee62d7e234f83ab3529/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ac5d96fd2a63b4b1721c8f773455c18f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3c120257e6cf7368ff119123fa88460/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/a760d468052391353af3c826ff9482da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b12e068939fe8e1de1413ded48a57d6f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1ded9e9c89ac038b99e5ae5cc0c9731e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5651d52ceb2d0a3d9db5cf452967478c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c46de1eb8073cc57d80713792a183f5d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/47c3d0dfebb4574b394b13ca7567af9c/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
 	package
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:18:5-45
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:18:5-45
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:1-34:12
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:11-69
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:17:11-69
 application
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:20:5-32:19
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:20:5-32:19
 	android:supportsRtl
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:23:9-41
 	android:icon
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:22:9-43
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:25:9-40
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:25:9-40
 activity#com.example.android.SimpleCalc.MainActivity
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:26:9-31:20
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:26:9-31:20
 	android:name
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:26:19-77
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:26:19-77
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml:29:27-74
 uses-sdk
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19b75d5f2c416ea2bdcf05c14f0b4aa9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19b75d5f2c416ea2bdcf05c14f0b4aa9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4a7b22bab049caabf01ed1c4bec22537/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4a7b22bab049caabf01ed1c4bec22537/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/458b636ad00f0ee8e490297fa2960594/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/458b636ad00f0ee8e490297fa2960594/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/618471bf61a32d5ac9b9faf8b637605e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/618471bf61a32d5ac9b9faf8b637605e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/5b3c11ae482753e847e69a9646eaf8b7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/5b3c11ae482753e847e69a9646eaf8b7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6c22c6e4e3e87a7f2ce90015cf178230/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6c22c6e4e3e87a7f2ce90015cf178230/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5a888ef6870db2e25686bcafe8c6e271/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/lu/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5a888ef6870db2e25686bcafe8c6e271/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/dabc0e1111fe99108215d7d7be57e2cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/dabc0e1111fe99108215d7d7be57e2cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/68543ed7a8b65f098c76d28d3b281d90/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/68543ed7a8b65f098c76d28d3b281d90/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b965d89ca2426ed352aaeadecb058891/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b965d89ca2426ed352aaeadecb058891/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/896901a91388b87aecab593efe63261f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/lu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/896901a91388b87aecab593efe63261f/AndroidManifest.xml:20:5-44
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/24f2959ed997cd522c25e2a99d860413/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/24f2959ed997cd522c25e2a99d860413/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ed568ce45900c5e495f886f27bafcfae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ed568ce45900c5e495f886f27bafcfae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1c66eb50d7199ee62d7e234f83ab3529/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1c66eb50d7199ee62d7e234f83ab3529/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ac5d96fd2a63b4b1721c8f773455c18f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ac5d96fd2a63b4b1721c8f773455c18f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3c120257e6cf7368ff119123fa88460/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3c120257e6cf7368ff119123fa88460/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/a760d468052391353af3c826ff9482da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/a760d468052391353af3c826ff9482da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b12e068939fe8e1de1413ded48a57d6f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/luispena/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b12e068939fe8e1de1413ded48a57d6f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1ded9e9c89ac038b99e5ae5cc0c9731e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1ded9e9c89ac038b99e5ae5cc0c9731e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5651d52ceb2d0a3d9db5cf452967478c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5651d52ceb2d0a3d9db5cf452967478c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c46de1eb8073cc57d80713792a183f5d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c46de1eb8073cc57d80713792a183f5d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/47c3d0dfebb4574b394b13ca7567af9c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/luispena/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/47c3d0dfebb4574b394b13ca7567af9c/AndroidManifest.xml:20:5-44
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		ADDED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		ADDED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml
+		INJECTED from /home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/src/main/AndroidManifest.xml

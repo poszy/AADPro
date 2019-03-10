@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lu/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "/home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
             "map": [
                 {
-                    "source": "/home/lu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19b75d5f2c416ea2bdcf05c14f0b4aa9/res/values-az/values-az.xml",
+                    "source": "/home/luispena/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/24f2959ed997cd522c25e2a99d860413/res/values-az/values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/lu/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5a888ef6870db2e25686bcafe8c6e271/res/values-az/values-az.xml",
+                    "source": "/home/luispena/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b12e068939fe8e1de1413ded48a57d6f/res/values-az/values-az.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

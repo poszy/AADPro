@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Mar 09 23:22:25 PST 2019
+0.baseType=DIRECTORY
+0.base=/home/luispena/ProgrammingProjects/AADPro/Android Developer Fundamentals Course (V1)/SimpleCalc/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
