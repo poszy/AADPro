@@ -15,10 +15,16 @@
  */
 package com.example.android.recyclerview;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.test.LoaderTestCase;
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * We couldn't come up with a good name for this class. Then, we realized
@@ -32,16 +38,47 @@ import android.widget.TextView;
  * If you don't like our puns, we named this Adapter GreenAdapter because its
  * contents are green.
  */
-// TODO (4) From GreenAdapter, extend RecyclerView.Adapter<NumberViewHolder>
-public class GreenAdapter {
+//  (4) From GreenAdapter, extend RecyclerView.Adapter<NumberViewHolder>
+public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHolder> {
 
-    // TODO (1) Add a private int variable called mNumberItems
+    //  (1) Add a private int variable called mNumberItems
+    private int mNumberItems;
 
-    // TODO (2) Create a constructor for GreenAdapter that accepts an int as a parameter for numberOfItems
-    // TODO (3) Store the numberOfItems parameter in mNumberItems
+    // (2) Create a constructor for GreenAdapter that accepts an int as a parameter for numberOfItems
+    GreenAdapter(int numberOfItems){
+        mNumberItems = numberOfItems;
+    }
 
-    // TODO (5) Override the onCreateViewHolder method
+    //  (3) Store the numberOfItems parameter in mNumberItems
+
+    //  (5) Override the onCreateViewHolder method
     // TODO (6) Create and return a new NumberViewHolder within this method
+
+    @Override
+    public NumberViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+        Context context = viewGroup.getContext();
+        int layoutIdForListItem = R.layout.number_list_item;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        boolean shouldAttachToParentImmediately = false;
+
+        View view = inflater.inflate(layoutIdForListItem, viewGroup, shouldAttachToParentImmediately);
+        NumberViewHolder viewHolder = new NumberViewHolder(view);
+
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(NumberViewHolder holder, int position) {
+        //holder.listItemNumberView.setText(String.valueOf(position));
+        holder.bind(position);
+    }
+
+    @Override
+    public int getItemCount() {
+        return mNumberItems;
+    }
+
+
 
     // TODO (7) Override onBindViewHolder
     // TODO (8) Within onBindViewHolder, call holder.bind and pass in the position
@@ -52,6 +89,8 @@ public class GreenAdapter {
      * Cache of the children views for a list item.
      */
     class NumberViewHolder extends RecyclerView.ViewHolder {
+
+
 
         // Will display the position in the list, ie 0 through getItemCount() - 1
         TextView listItemNumberView;
