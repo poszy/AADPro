@@ -30,6 +30,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.sunshine.ForecastAdapter.ForecastAdapterOnClickHandler;
 import com.example.android.sunshine.data.SunshinePreferences;
@@ -219,10 +220,35 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
             mForecastAdapter.setWeatherData(null);
             loadWeatherData();
             return true;
+        } else if (id == R.id.action_open_map ){
+            launchMap();
         }
 
         // TODO (2) Launch the map when the map menu item is clicked
 
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void launchMap(){
+        String address = "1600 Ampitheatre Parkway, CA";
+        Uri geoLocation = Uri.parse("geo:0,0?q=" + address);
+        // use ACTION_VIEW for implicit intent
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(geoLocation);
+
+        if(i.resolveActivity(getPackageManager()) != null){
+            startActivity(i);
+        } else{
+            Context context = getApplicationContext();
+            CharSequence text = "Cannot Launch Map";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+        }
+
+
     }
 }
