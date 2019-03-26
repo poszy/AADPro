@@ -1,6 +1,7 @@
 package com.example.android.lifecycle;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     // TODO (1) Create a key String called LIFECYCLE_CALLBACKS_TEXT_KEY
+    private final static String LIFECYCLE_CALLBACKS_TEXT_KEY = "lifecycle";
 
     /* Constant values for the names of each respective lifecycle callback */
     private static final String ON_CREATE = "onCreate";
@@ -50,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
         mLifecycleDisplay = (TextView) findViewById(R.id.tv_lifecycle_events_display);
 
         // TODO (6) If savedInstanceState is not null and contains LIFECYCLE_CALLBACKS_TEXT_KEY, set that text on our TextView
+        if(savedInstanceState !=null){
+            if(savedInstanceState.containsKey(LIFECYCLE_CALLBACKS_TEXT_KEY)){
+                String allPreviousLifeCycleCallbacks = savedInstanceState.getString(LIFECYCLE_CALLBACKS_TEXT_KEY);
+                mLifecycleDisplay.setText(allPreviousLifeCycleCallbacks);
+
+            }
+
+        }
 
         logAndAppend(ON_CREATE);
     }
@@ -135,6 +145,14 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
 
         logAndAppend(ON_DESTROY);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        logAndAppend(ON_SAVE_INSTANCE_STATE);
+        String lifeCycleDisplayTextViewContent = mLifecycleDisplay.getText().toString();
+        outState.putString(LIFECYCLE_CALLBACKS_TEXT_KEY,lifeCycleDisplayTextViewContent);
     }
 
     // TODO (2) Override onSaveInstanceState
