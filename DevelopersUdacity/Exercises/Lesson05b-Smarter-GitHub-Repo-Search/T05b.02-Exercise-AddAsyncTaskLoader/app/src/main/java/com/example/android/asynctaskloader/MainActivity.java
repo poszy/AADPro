@@ -15,6 +15,8 @@
  */
 package com.example.android.asynctaskloader;
 
+import android.app.LoaderManager;
+import android.content.Loader;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -31,7 +33,7 @@ import java.io.IOException;
 import java.net.URL;
 
 // TODO (1) implement LoaderManager.LoaderCallbacks<String> on MainActivity
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
 
     /* A constant to save and restore the URL that is being displayed */
     private static final String SEARCH_QUERY_URL_EXTRA = "query";
@@ -57,12 +59,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
-
         mUrlDisplayTextView = (TextView) findViewById(R.id.tv_url_display);
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
-
         mErrorMessageDisplay = (TextView) findViewById(R.id.tv_error_message_display);
-
         mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
 
         if (savedInstanceState != null) {
@@ -129,6 +128,21 @@ public class MainActivity extends AppCompatActivity {
         mSearchResultsTextView.setVisibility(View.INVISIBLE);
         /* Then, show the error */
         mErrorMessageDisplay.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public Loader<String> onCreateLoader(int id, Bundle args) {
+        return null;
+    }
+
+    @Override
+    public void onLoadFinished(Loader<String> loader, String data) {
+
+    }
+
+    @Override
+    public void onLoaderReset(Loader<String> loader) {
+
     }
 
     // TODO (3) Override onCreateLoader
