@@ -84,7 +84,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
     // to a float; if it cannot, show a helpful error message and return false. If it can be converted
     // to a float check that that float is between 0 (exclusive) and 3 (inclusive). If it isn't, show
     // an error message and return false. If it is a valid number, return true.
-    
+
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {

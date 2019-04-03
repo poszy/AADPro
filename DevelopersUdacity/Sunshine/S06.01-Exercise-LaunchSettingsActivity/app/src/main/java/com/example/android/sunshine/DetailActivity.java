@@ -2,6 +2,7 @@ package com.example.android.sunshine;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -56,4 +57,28 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     // TODO (7) Launch SettingsActivity when the Settings option is clicked
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if(id == android.R.id.home){
+            NavUtils.navigateUpFromSameTask(this);
+        }
+
+        if (id == R.id.action_setting){
+
+            Intent I = new Intent(this, SettingsActivity.class);
+            startActivity(I);
+        }
+
+        //  (1) Add new Activity called SettingsActivity using Android Studio wizard
+        // Do step 2 in SettingsActivity
+        // (2) Set setDisplayHomeAsUpEnabled to true on the support ActionBar
+
+        //  (6) Launch SettingsActivity when the Settings option is clicked
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }
