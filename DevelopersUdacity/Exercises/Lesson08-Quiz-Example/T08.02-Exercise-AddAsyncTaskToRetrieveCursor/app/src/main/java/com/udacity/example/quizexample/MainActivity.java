@@ -16,10 +16,16 @@
 
 package com.udacity.example.quizexample;
 
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import java.net.URI;
 
 /**
  * Gets the data from the ContentProvider and shows a series of flash cards.
@@ -32,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO (3) Create an instance variable storing a Cursor called mData
     private Button mButton;
+    private Cursor mData;
 
     // This state is when the word definition is hidden and clicking the button will therefore
     // show the definition
@@ -40,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     // This state is when the word definition is shown and clicking the button will therefore
     // advance the app to the next word
     private final int STATE_SHOWN = 1;
+    private final Uri mURI = Uri.parse("DroidTermsExampleContract.CONTENT_URI");
 
 
     @Override
@@ -51,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         mButton = (Button) findViewById(R.id.button_next);
 
         // TODO (5) Create and execute your AsyncTask here
+        QueryTask mTask = new QueryTask();
+        mTask.execute();
     }
 
     /**
@@ -90,7 +100,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // TODO (1) Create AsyncTask with the following generic types <Void, Void, Cursor>
+    // (1) Create AsyncTask with the following generic types <Void, Void, Cursor>
+    private class QueryTask extends AsyncTask<Void , Void , Cursor>{
+
+        @Override
+        protected Cursor doInBackground(Void... params) {
+            ContentResolver resolver = getContentResolver();
+            Cursor cursor = resolver.query(mURI,null,null,null,null);
+            return cursor;
+        }
+
+        @Override
+        protected void onPostExecute(Cursor cursor) {
+            super.onPostExecute(cursor);
+
+            mData = cursor;
+        }
+    }
+
     // TODO (2) In the doInBackground method, write the code to access the DroidTermsExample
     // provider and return the Cursor object
     // TODO (4) In the onPostExecute method, store the Cursor object in mData
