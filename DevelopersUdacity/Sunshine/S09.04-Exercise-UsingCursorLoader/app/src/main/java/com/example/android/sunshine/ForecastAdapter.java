@@ -16,6 +16,7 @@
 package com.example.android.sunshine;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +31,8 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
 
     //  TODO (14) Remove the mWeatherData declaration and the setWeatherData method
     private String[] mWeatherData;
-    //  TODO (1) Declare a private final Context field called mContext
+    //   (1) Declare a private final Context field called mContext
+    private final Context mContext;
 
     /*
      * Below, we've defined an interface to handle clicks on items within this Adapter. In the
@@ -47,8 +49,9 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
         void onClick(String weatherForDay);
     }
 
-//  TODO (2) Declare a private Cursor field called mCursor
-//  TODO (3) Add a Context field to the constructor and store that context in mContext
+//  (2) Declare a private Cursor field called mCursor
+    private Cursor mCursor;
+//   (3) Add a Context field to the constructor and store that context in mContext
 
     /**
      * Creates a ForecastAdapter.
@@ -56,8 +59,9 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
      * @param clickHandler The on-click handler for this adapter. This single handler is called
      *                     when an item is clicked.
      */
-    public ForecastAdapter(ForecastAdapterOnClickHandler clickHandler) {
+    public ForecastAdapter(ForecastAdapterOnClickHandler clickHandler, Context context) {
         mClickHandler = clickHandler;
+        mContext = context;
     }
 
     /**
