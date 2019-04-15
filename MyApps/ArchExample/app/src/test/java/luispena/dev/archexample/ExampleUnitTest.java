@@ -1,4 +1,4 @@
-package luispena.dev.architectureexample;
+package luispena.dev.archexample;
 
 import org.junit.Test;
 
