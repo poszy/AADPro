@@ -21,7 +21,7 @@ public class Note {
         this.priority = priority;
     }
 
-    // set the id here since we still want room set the id to the note object. 
+    // set the id here since we still want room set the id to the note object.
     public void setId(int id) {
         this.id = id;
     }
