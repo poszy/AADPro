@@ -18,11 +18,17 @@ package com.example.android.sunshine.data.database;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 
 import java.util.Date;
 
-@Entity(tableName = "weather", indices = {@Index(value = {"date"}, unique = true)})public class WeatherEntry {
+@Entity(tableName = "weather", indices = {@Index(value = {"date"}, unique = true)})
+public class WeatherEntry {
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @PrimaryKey(autoGenerate = true)
     private int id;
