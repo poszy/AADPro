@@ -22,7 +22,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.data.database.WeatherEntry;
-import com.example.android.sunshine.databinding2.ActivityDetailBinding;
+import com.example.android.sunshine.databinding.ActivityDetailBinding;
 import com.example.android.sunshine.utilities.SunshineDateUtils;
 import com.example.android.sunshine.utilities.SunshineWeatherUtils;
 
