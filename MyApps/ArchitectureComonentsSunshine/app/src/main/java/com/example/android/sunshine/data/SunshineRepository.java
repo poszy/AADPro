@@ -23,6 +23,9 @@ import com.example.android.sunshine.AppExecutors;
 import com.example.android.sunshine.data.database.WeatherDao;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.data.network.WeatherNetworkDataSource;
+import com.example.android.sunshine.utilities.SunshineDateUtils;
+
+import java.util.Date;
 
 /**
  * Handles data operations in Sunshine. Acts as a mediator between {@link WeatherNetworkDataSource}
@@ -45,6 +48,9 @@ public class SunshineRepository {
         mExecutors = executors;
         LiveData<WeatherEntry[]> networkData = mWeatherNetworkDataSource.getCurrentWeatherForecasts();
         networkData.observeForever(newForecastsFromNetwork -> {
+            // Deletes old historical data
+            deleteOldData();
+            Log.d(LOG_TAG, "Old weather deleted");
             mExecutors.diskIO().execute(() -> {
                 // Insert our new weather data into Sunshine's database
                 mWeatherDao.bulkInsert(newForecastsFromNetwork);
@@ -78,8 +84,11 @@ public class SunshineRepository {
         // performed, we have nothing to do in this method.
         if (mInitialized) return;
         mInitialized = true;
-
-        startFetchWeatherService();
+        mExecutors.diskIO().execute(() -> {
+            if (isFetchNeeded()) {
+                startFetchWeatherService();
+            }
+        });
     }
 
     /**
@@ -90,8 +99,8 @@ public class SunshineRepository {
      * Deletes old weather data because we don't need to keep multiple days' data
      */
     private void deleteOldData() {
-        // TODO Finish this method when instructed
-    }
+        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
+        mWeatherDao.deleteOldWeather(today);    }
 
     /**
      * Checks if there are enough days of future weather for the app to display all the needed data.
@@ -99,8 +108,9 @@ public class SunshineRepository {
      * @return Whether a fetch is needed
      */
     private boolean isFetchNeeded() {
-        // TODO Finish this method when instructed
-        return true;
+        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
+        int count = mWeatherDao.countAllFutureWeather(today);
+        return (count < WeatherNetworkDataSource.NUM_DAYS);
     }
 
     /**
@@ -110,5 +120,12 @@ public class SunshineRepository {
     private void startFetchWeatherService() {
         mWeatherNetworkDataSource.startFetchWeatherService();
     }
+
+    public LiveData<WeatherEntry> getWeatherByDate(Date date) {
+        initializeData();
+        return mWeatherDao.getWeatherByDate(date);
+    }
+
+
 
 }

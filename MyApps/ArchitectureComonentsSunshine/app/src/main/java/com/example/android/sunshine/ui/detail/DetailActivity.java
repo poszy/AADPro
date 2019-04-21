@@ -16,6 +16,7 @@
 package com.example.android.sunshine.ui.detail;
 
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,7 @@ import com.example.android.sunshine.AppExecutors;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.databinding.ActivityDetailBinding;
+import com.example.android.sunshine.utilities.InjectorUtils;
 import com.example.android.sunshine.utilities.SunshineDateUtils;
 import com.example.android.sunshine.utilities.SunshineWeatherUtils;
 
@@ -36,6 +38,7 @@ public class DetailActivity extends AppCompatActivity {
 
     public static final String WEATHER_ID_EXTRA = "WEATHER_ID_EXTRA";
     private DetailActivityViewModel mViewModel;
+    private DetailViewModelFactory mFactory;
 
     /*
      * This field is used for data binding. Normally, we would have to call findViewById many
@@ -52,7 +55,9 @@ public class DetailActivity extends AppCompatActivity {
 
         mDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
         long timestamp = getIntent().getLongExtra(WEATHER_ID_EXTRA, -1);
-        Date date = new Date(timestamp);
+        Date date = SunshineDateUtils.getNormalizedUtcDateForToday();
+        mFactory = InjectorUtils.provideDetailViewModelFactory(this.getApplicationContext(),date);
+        mViewModel = ViewModelProviders.of(this, mFactory).get(DetailActivityViewModel.class);
 
 
         // The first time DetailActivity is created, the ViewModelProviders.of method is called in onCreate. It creates a new DetailActivityViewModel instance
