@@ -19,4 +19,5 @@
     <string name="title_selection_sort">Selection Sort</string>
     <string name="title_recursion">Recursion</string>
     <string name="desc_recursion">Recursion in computer science is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem</string>
+    <string name="binary_search">Binary Search</string>
 </resources>

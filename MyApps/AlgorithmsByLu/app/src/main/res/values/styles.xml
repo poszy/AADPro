@@ -32,5 +32,15 @@
 
     </style>
 
+    <style name="AlgoTitle">
+
+        <item name="android:padding"> 10dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+
+
+    </style>
+
 
 </resources>
