@@ -16,11 +16,7 @@ class AnimalAdapter(val items: ArrayList<String>, val context: Context) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(context).inflate(
-                R.layout.animal_list_item,
-                parent,
-                false
-            )
+            LayoutInflater.from(context).inflate(R.layout.animal_list_item, parent, false)
         )
     }
 
@@ -35,4 +31,5 @@ class AnimalAdapter(val items: ArrayList<String>, val context: Context) :
 class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     // Holds the TextView that will add each animal to
     val tvAnimalType = view.tv_animal_type
+    val imAnimalType = view.iv_animal_type
 }
