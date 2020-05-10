@@ -134,4 +134,12 @@ public class BeginnerAdapater extends RecyclerView.Adapter<BeginnerAdapater.MyVi
     // Step 5
     public void setOnAdapterItemClick(IAdpaterItemClick adapterClickHandler){ mAdapterItemclickListener = adapterClickHandler; }
 
+    public void updateList(List<Algorithm> newList) {
+
+        algorithmsList = (List<Algorithm>) new Algorithm();
+        algorithmsList.addAll(newList);
+        notifyDataSetChanged();
+
+
+    }
 }

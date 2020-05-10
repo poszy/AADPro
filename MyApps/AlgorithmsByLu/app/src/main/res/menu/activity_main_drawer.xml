@@ -6,16 +6,16 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
+            android:title="Donate" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:icon="@drawable/ic_shop_black_24dp"
+            android:title="Buy Super Pro Max Version" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:icon="@drawable/ic_settings_applications_black_24dp"
+            android:title="Settings" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
@@ -32,6 +32,11 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
+
+            <item
+                android:id="@+id/nav_social_media"
+                android:icon="@drawable/ic_public_black_24dp"
+                android:title="Follow Me" />
         </menu>
     </item>
 
